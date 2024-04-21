@@ -1,0 +1,14 @@
+<nav class="navbar navbar-dark bg-primary mb-4">
+    <div class="nav-container">
+        <a class="navbar-brand" href="/">Main Page + Songs</a>
+        <a class="navbar-brand" href="{% url 'band:concert_locations' %}">Concert Locations</a>
+		<a class="navbar-brand" href="{% url 'band:contact_details' %}">Contact Details</a>
+        <div class="navbar-nav flex-row ml-auto navbar-brand">
+            {% if user.is_authenticated %}
+                <a class="nav-item nav-link navbar-brand" href="{% url 'user_auth:logout' %}">Logout</a>
+            {% else %}
+                <a class="nav-item nav-link navbar-brand" href="{% url 'user_auth:login' %}">Login</a>
+            {% endif %}
+        </div>
+    </div>
+</nav>

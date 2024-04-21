@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<link rel="stylesheet" href="/static/user_auth/contact_details.css">
+
+<h1>Contact Us</h1>
+
+<p>If you have any questions or inquiries, feel free to contact us using the information below:</p>
+
+<h2>KESSOKU BAND</h2>
+<p>Email: kessokuband@gmail.com</p>
+<p>Phone: +1234567890</p>
+<p>Address: 123 Band Street, Tokyo, Japan</p>
+
+<p>You can also follow us on social media:</p>
+<ul>
+    <li><a href="https://www.facebook.com/band">Facebook</a></li>
+    <li><a href="https://twitter.com/band">Twitter</a></li>
+    <li><a href="https://www.instagram.com/band">Instagram</a></li>
+</ul>
+
+<form action="submit_contact_form" method="post">
+    {% csrf_token %}
+    <label for="club_name">Club Name:</label><br>
+    <input type="text" id="club_name" name="club_name" required><br><br>
+    
+    <label for="contact_person">Contact Person:</label><br>
+    <input type="text" id="contact_person" name="contact_person" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+{% endblock %}

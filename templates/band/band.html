@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1 class="text-center mb-3">Songs to vote on:</h1>
+{% if latest_song_list %}
+{% for song in latest_song_list %}
+<div class="card-mb-3">
+	<div class="card-body">
+		<p class="lead">{{ song.song_text }}</p>
+		<a href="{% url 'band:detail' song.id %}" class="btn btn-primary btn-sm">Vote Now</a>
+		<a href="{% url 'band:results' song.id %}" class="btn btn-secondary btn-sm">Results</a>
+	</div>
+</div>
+{% endfor %}
+{% else %}
+<p>No song available to vote on</p>
+{% endif %}
+{% endblock %}

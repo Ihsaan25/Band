@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<link rel="stylesheet" href="/static/band/members_styling.css">
+
+<div class="card text-center">
+	<div class="card-body">
+		<h1>Welcome To KESSOKU BAND Webpage!</h1>
+		<p>Click on the link below to vote for your favorite song!</p>
+		<a class="btn btn-dark" href="{% url 'band:index' %}">
+			View Available Songs</a>
+	</div>
+</div>
+
+<h1> THESE ARE KESSOKU BAND MEMBERS</h1>
+
+<div class="row">
+	<div class="col">
+		<div class="container text-center">
+			<div class="box box-1" style="background-image: url({% static 'images/band_members/Gotou.Hitori.jpg' %});" data-text="Gotou"></div>
+			<div class="box box-2" style="background-image: url({% static 'images/band_members/Ijichi.Nijika.jpg' %});" data-text="Ijichi"></div>
+			<div class="box box-3" style="background-image: url({% static 'images/band_members/Yamada.Ryou.jpg' %});" data-text="Yamada"></div>
+			<div class="box box-4" style="background-image: url({% static 'images/band_members/Kita.Ikuyo.jpg' %});" data-text="Kita"></div>
+		</div>
+	</div>
+</div>
+<div>
+	<div class="text-container">
+			<div><h1>WHO IS KESSOKU BAND!!!!!!</h1></div>
+			<div class="content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni placeat, optio beatae, 
+					alias natus iste ratione repellendus dolorem esse illo voluptas animi odio laborum et. 
+					Labore quasi eum possimus voluptate! Soluta distinctio inventore totam sapiente perferendis 
+					assumenda eaque tempora asperiores nemo omnis cum nisi odit, unde amet odio voluptatem. 
+					Earum deserunt ab perferendis, esse nihil ratione nulla accusamus neque odio.</p></div>
+	</div>
+</div>
+
+{% endblock %}

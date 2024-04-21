@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    Concert Locations
+{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'band/concert_location.css' %}">
+
+<div class="container">
+    <div class="card">
+        <img src="{% static 'images/concert_locations/makuhari_messe.jpg' %}" alt="makuhari_messe">
+        <div class="head">Makuhari Messe</div>
+        <div class="band-info">
+            <ul>
+                <li><strong>Date:</strong> April 7, 2024</li>
+                <li><strong>Time:</strong> 8:00 PM</li>
+                <li><strong>Ticket Prices:</strong> $20 - $50</li>
+            </ul>
+        </div>
+    </div>
+    <div class="card">
+        <img src="{% static 'images/concert_locations/nippon_budokan.jpg' %}" alt="nippon_budokan">
+        <div class="head">Nippon Budokan</div>
+        <div class="band-info">
+            <ul>
+                <li><strong>Date:</strong> April 14, 2024</li>
+                <li><strong>Time:</strong> 8:00 PM</li>
+                <li><strong>Ticket Prices:</strong> $20 - $50</li>
+            </ul>
+        </div>
+    </div>
+    <div class="card">
+        <img src="{% static 'images/concert_locations/nissan_stadium.jpg' %}" alt="nissan_stadium">
+        <div class="head">Nissan Stadium</div>
+        <div class="band-info">
+            <ul>
+                <li><strong>Date:</strong> April 21, 2024</li>
+                <li><strong>Time:</strong> 8:00 PM</li>
+                <li><strong>Ticket Prices:</strong> $20 - $50</li>
+            </ul>
+        </div>
+    </div>
+    <div class="card">
+        <img src="{% static 'images/concert_locations/saitama_super_arena.jpg' %}" alt="saitama_super_arena">
+        <div class="head">Saitama Super Arena</div>
+        <div class="band-info">
+            <ul>
+                <li><strong>Date:</strong> April 28, 2024</li>
+                <li><strong>Time:</strong> 8:00 PM</li>
+                <li><strong>Ticket Prices:</strong> $20 - $50</li>
+            </ul>
+        </div>
+    </div>
+    <div class="card">
+        <img src="{% static 'images/concert_locations/tokyo_dome.jpg' %}" alt="tokyo_dome">
+        <div class="head">Tokyo Dome</div>
+        <div class="band-info">
+            <ul>
+                <li><strong>Date:</strong> May 5, 2024</li>
+                <li><strong>Time:</strong> 8:00 PM</li>
+                <li><strong>Ticket Prices:</strong> $20 - $50</li>
+            </ul>
+        </div>
+    </div>
+    <div class="card">
+        <img src="{% static 'images/concert_locations/yokohama_arena.jpg' %}" alt="yokohama_arena">
+        <div class="head">Yokohama Arena</div>
+        <div class="band-info">
+            <ul>
+                <li><strong>Date:</strong> May 12, 2024</li>
+                <li><strong>Time:</strong> 8:00 PM</li>
+                <li><strong>Ticket Prices:</strong> $20 - $50</li>
+            </ul>
+        </div>
+    </div>
+    <div class="card">
+        <img src="{% static 'images/concert_locations/yoyogi_national_gymnasium.jpg' %}" alt="yoyogi_national_gymnasium">
+        <div class="head">Yoyogi National Gymnasium</div>
+        <div class="band-info">
+            <ul>
+                <li><strong>Date:</strong> May 19, 2024</li>
+                <li><strong>Time:</strong> 8:00 PM</li>
+                <li><strong>Ticket Prices:</strong> $20 - $50</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
