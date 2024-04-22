@@ -40,5 +40,5 @@ _You can also run the Band Django app using docker._
   4. Build a docker image:
      - docker build -t band .
        
-  5. Run docker container: docker run -p 8000:8000 band_django_app
+  5. Run docker container: docker run -p 8000:8000 ihsaan/band-website
        - http://127.0.0.1:8000/ if it doesn't work try http://localhost:8000/
