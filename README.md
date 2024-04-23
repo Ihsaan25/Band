@@ -13,30 +13,44 @@ _Welcome to the Band Django App! This web application allows users to vote on so
 _Follow these steps to set up the Band Django app:_
 
 1. Clone this repository to your local machine you can use the command prompt or the terminal:
-    - git clone https://github.com/Ihsaan25/band.git
+   ```
+    git clone https://github.com/Ihsaan25/band.git
+   ```
    
-2. Navigate to the project directory where the django app is located:
-    - cd band_django_app
-  
-3. Create and activate a Python virtual environment:
+3. Navigate to the project directory where the django app is located:
+   ```
+    cd band_django_app
+   ```
+5. Create and activate a Python virtual environment:
 
    - Create a virtual environment:
-        - python -m venv env
+     ```
+        python -m venv env
+     ```
      
     - Activate the virtual environment:
           - On Unix/MacOS:
+              ```
               source env/bin/activate
+              ```
           - On Windows:
+              ```
               .\env\Scripts\activate
+              ```
    
-4. Install dependencies using:
-    - pip install -r requirements.txt
+6. Install dependencies using:
+   ```
+    pip install -r requirements.txt
+    ```
+8. Apply migrations:
+   ```
+    python manage.py migrate
+   ```
 
-5. Apply migrations:
-    - python manage.py migrate
-
-6. Run the development server and the website should appear:
-    - python manage.py runserver
+10. Run the development server and the website should appear:
+    ```
+    python manage.py runserver
+    ```
 
 Now, you can access the Band Django App in your browser at http://127.0.0.1:8000/
 
@@ -44,15 +58,23 @@ Now, you can access the Band Django App in your browser at http://127.0.0.1:8000
 _You can also run the Band Django app using docker._
 
   1. Clone the repository to your local machine:
-     - git clone https://github.com/Ihsaan25/band.git
+     ```
+     git clone https://github.com/Ihsaan25/band.git
+     ```
    
-  2. Navigate to project directory:
-     - cd band_django_app
+  3. Navigate to project directory:
+     ```
+     cd band_django_app
+     ```
        
-  3. Build a docker image:
-     - docker build -t band .
+  5. Build a docker image:
+     ```
+     docker build -t band .
+     ```
        
-  4. Run docker container: docker run -p 8000:8000 ihsaan/band-website:
-     - docker run -p 8000:8000 band_django_app
+  7. Run docker container: docker run -p 8000:8000 ihsaan/band-website:
+     ```
+     docker run -p 8000:8000 band_django_app
+     ```
      
        - http://127.0.0.1:8000/ if it doesn't work try http://localhost:8000/
