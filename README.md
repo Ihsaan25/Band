@@ -14,7 +14,7 @@ _Follow these steps to set up the Band Django app:_
 
 1. Clone this repository to your local machine you can use the command prompt or the terminal:
    ```
-    git clone https://github.com/Ihsaan25/band.git
+    git clone https://github.com/username/repository-name.git
    ```
    
 3. Navigate to the project directory where the django app is located:
@@ -59,7 +59,7 @@ _You can also run the Band Django app using docker._
 
   1. Clone the repository to your local machine:
      ```
-     git clone https://github.com/Ihsaan25/band.git
+     git clone https://github.com/username/repository-name.git
      ```
    
   3. Navigate to project directory:
