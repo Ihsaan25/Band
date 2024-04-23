@@ -64,7 +64,7 @@ _You can also run the Band Django app using docker._
    
   3. Navigate to project directory:
      ```
-     cd band_django_app
+     cd django_app
      ```
        
   5. Build a docker image:
