@@ -19,7 +19,7 @@ _Follow these steps to set up the Band Django app:_
    
 3. Navigate to the project directory where the django app is located:
    ```
-    cd band_django_app
+    cd django_app
    ```
 5. Create and activate a Python virtual environment:
 
@@ -72,9 +72,9 @@ _You can also run the Band Django app using docker._
      docker build -t band .
      ```
        
-  7. Run docker container: docker run -p 8000:8000 ihsaan/band-website:
+  7. Run docker container:
      ```
-     docker run -p 8000:8000 band_django_app
+     docker run -d -p 8000:8000 project-name
      ```
      
        - http://127.0.0.1:8000/ if it doesn't work try http://localhost:8000/
