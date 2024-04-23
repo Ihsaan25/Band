@@ -19,6 +19,10 @@ _Follow these steps to set up the Band Django app:_
     - cd band_django_app
   
 3. Create and activate a Python virtual environment:
+
+   - Create a virtual environment:
+        - python -m venv env
+     
     - Activate the virtual environment:
           - On Unix/MacOS:
               source env/bin/activate
