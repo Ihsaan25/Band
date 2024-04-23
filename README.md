@@ -17,20 +17,28 @@ _Follow these steps to set up the Band Django app:_
    
 2. Navigate to the project directory where the django app is located:
     - cd band_django_app
+  
+3. Create and activate a Python virtual environment:
+    - Activate the virtual environment:
+          - On Unix/MacOS:
+              source env/bin/activate
+          - On Windows:
+              .\env\Scripts\activate
    
-3. Install dependencies using:
+4. Install dependencies using:
     - pip install -r requirements.txt
 
-4. Apply migrations:
+5. Apply migrations:
     - python manage.py migrate
 
-5. Run the development server and the website should appear:
+6. Run the development server and the website should appear:
     - python manage.py runserver
 
 Now, you can access the Band Django App in your browser at http://127.0.0.1:8000/
 
 ## Running with Docker 
 _You can also run the Band Django app using docker._
+
   1. Clone the repository to your local machine:
      - git clone https://github.com/Ihsaan25/band.git
    
@@ -41,4 +49,6 @@ _You can also run the Band Django app using docker._
      - docker build -t band .
        
   4. Run docker container: docker run -p 8000:8000 ihsaan/band-website:
+     - docker run -p 8000:8000 band_django_app
+     
        - http://127.0.0.1:8000/ if it doesn't work try http://localhost:8000/
