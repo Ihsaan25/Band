@@ -12,9 +12,12 @@ _Welcome to the Band Django App! This web application allows users to vote on so
 
 _Follow these steps to set up the Band Django app:_
 
+- username: is the developers name who create the project.
+- repository-name: name of repository where project is stored.
+
 1. Clone this repository to your local machine you can use the command prompt or the terminal:
    ```
-    git clone https://github.com/username/repository-name.git
+    git clone https://github.com/Ihsaan25/Band.git
    ```
    
 3. Navigate to the project directory where the django app is located:
@@ -59,7 +62,7 @@ _You can also run the Band Django app using docker._
 
   1. Clone the repository to your local machine:
      ```
-     git clone https://github.com/username/repository-name.git
+     git clone https://github.com/Ihsaan25/Band.git
      ```
    
   3. Navigate to project directory:
@@ -74,7 +77,7 @@ _You can also run the Band Django app using docker._
        
   7. Run docker container:
      ```
-     docker run -d -p 8000:8000 project-name
+     docker run -d -p 8000:8000 band-website
      ```
-     
-       - http://127.0.0.1:8000/ if it doesn't work try http://localhost:8000/
+     Now you can access the Band Django app in your browser at :
+       - http://127.0.0.1:8000/ or http://localhost:8000/
